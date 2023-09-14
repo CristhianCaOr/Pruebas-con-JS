@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>evaluacion</title>
+    <script>
+    
+    function inicioevaluacion(){
+        document.write("<br><br>Se realiza evaluacion a usuario ")
+    } 
+    function estadousuarioe(){
+    let = encuentra = ""
+    let = mal = ""
+    encuentra = prompt("Como se encuentra el usuario \n 1: Bien \n 2: Mal")
+    if(encuentra == "1"){
+        document.write(" quien se encuentra en buenas condiciones generales, ")
+} else if(encuentra == "2"){
+    mal = prompt("¿Por qué?")
+    document.write(mal)
+}
+}
+    function cuidadorevaluacion() {
+        let parentesco = ""
+        parentesco = prompt("Cual es el parentesco del cuidador")
+        if (parentesco == "padre" || parentesco == "hermano" || parentesco == "abuelo" || parentesco == "primo" || parentesco == "vecino") {
+            document.write("en compañía de su " + parentesco + " cuidador, ")
+        } else if (parentesco == "madre" || parentesco == "abuela" || parentesco == "hermana" || parentesco == "prima" || parentesco == "vecina") {
+            document.write( "en compañía de su " + parentesco + " cuidadora, ")
+        } else if(parentesco == "usuaria"){
+            document.write("atiende la visita " + parentesco +", ")
+        } else if(parentesco == "usuario"){
+            document.write("atiende la visita el " + parentesco +", ")
+        }
+}
+    function formatoev(){
+        document.write("se diligencia formato de evaluación en el que se evidencia que, ")
+    }
+    function vidadiaria(){
+        let = es = ""
+        es = prompt("como esta la usuaria en actividades de la vida diaria \n 1: dependiente \n 2: semidependiente \n 3: independiente")
+
+    if(es == "1"){
+        document.write("la usuaria es dependiente en las actividades de la vida diaria e instrumentales, ")
+    } else if(es == "2"){
+        document.write("la usuaria es semindependiente en las actividades de la vida diaria básica e instrumentales, ")
+    } else if(es == "3"){
+        document.write("la usuaria es independiente en las actividades de la vida diaria básica e instrumentales, ")
+    }
+    
+    oeoeao;eajd
+    
+    }
+    function cognitivo(){
+        let = level = ""
+        level = prompt("Como esta a nivel cognitivo \n 1: funcional \n 2: no funcional")
+            if(level == "1"){
+            document.write("es funcional a nivel cognitivo ")
+            } else if(level == "2"){
+                document.write("no funcional a nivel cognitivo ")
+            }
+
+        }
+    function add(){
+    let = argumento = ""
+    argumento = prompt("¿Deseas agregar algo mas?, si no, dale enter")
+    document.write(argumento)
+}
+    function finas(){
+    let = fino = ""
+    fino = prompt("como esta en las habilidades motoras fianas \n 1: funcional \n 2: no funcional")
+        if(fino == "1"){
+            document.write("funcional en habilidades motoras fina, ")
+        } else if(fino == "2"){
+            document.write("no es funcional en habilidades motoras finas, ")
+        }
+
+
+}
+    function gruesas(){ 
+        let = grueso = ""
+        let = why = ""
+        grueso = prompt("como esta en habilidades motoras gruesas \n 1: funcional \n 2: no funcional")
+        if(grueso == "1"){
+            document.write("es funcional en habilidades motoras gruesas. ")
+        } else if(grueso == "2"){
+        why = prompt("¿por que? \n 1: No tiene control cefálico \n 2: No tiene control postural \n 3: No tiene control cefálico ni postural ") 
+        if(why == "1"){
+            document.write("no es funcional en habilidades motoras gruesas, no tiene control cefalico. ")
+        } if(why == "2"){
+            document.write("no es funcional en habilidades motoras gruesas, no tiene control postural. ") 
+        } if(why == "3"){
+            document.write("no es funcional en habilidades motoras gruesas, no tiene control cefálico ni postural. ")
+        }
+}
+}    
+    function accesorios(){
+        let = que = ""
+        que = prompt("que accesorios tenía el usuario \n 1: no \n 2: silla de ruedas \n 3: medico en casa")
+        if(que == "1"){
+        document.write(" ")
+    } else if(que == "2"){
+        document.write("usuario tiene silla de ruedas neurológica. ")
+    } else if(que == "3"){
+        document.write("usuario tiene medico en casa. ")
+    }
+}
+    function end(){
+    document.write(" Se informa objetivo de tratamiento, se le informa al usuario fecha de próxima atencion y se deja estable.")
+}
+
+inicioevaluacion()
+estadousuarioe()
+cuidadorevaluacion()
+formatoev()
+add()
+vidadiaria()
+cognitivo()
+add()
+finas()
+add()
+gruesas()
+add()
+accesorios()
+end()
+
+</script>
+</head>
+<body>
+    
+</body>
+</html>
