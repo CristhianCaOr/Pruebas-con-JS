@@ -6,6 +6,7 @@ documento = prompt("Pon el tipo de documento y el numero de identificacion")
     document.write(documento)
 }
 
+
 function visitapresencial(){  
     
   
@@ -383,8 +384,6 @@ function cierrepresencial(){
     cierrepresencial()
 }
 
-
-
 function atencionvirtual(){  
 
     
@@ -594,20 +593,6 @@ switch(practicas){
     cierrevirtual()
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 function tipodevisita(){
