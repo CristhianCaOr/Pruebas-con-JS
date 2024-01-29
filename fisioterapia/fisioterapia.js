@@ -438,9 +438,6 @@ switch(estado){
 }
 }
 
-           
-
-
 
 function enfoquellamada(){
 let razon = null
@@ -470,20 +467,23 @@ switch(razon){
 }     
 
 
+function indicaciones() {
+let indications = null
+indications = prompt("¿Dejaste indicaciones? \n 1: si  \n 2: no ")
+        
+switch(indications){
+    
+    case "1":
+        document.write(" se dejan las indicaciones y se recuerdan los compromisos y dinámicas del programa, se deja el usuario en estables condiciones y se informa la fecha de la próxima atención ")
+    break;
 
+    case "2":
+        document.write(" ")
+    break;
 
+    }
+}
 
-
-
-
-function indicaciones(){
-        let = indications = ""
-        indications = prompt("¿Dejaste indicaciones? \n 1: si  \n 2: no ")
-        if(indications == "1"){
-            document.write(" se dejan las indicaciones y se recuerdan los compromisos y dinámicas del programa, se deja el usuario en estables condiciones y se informa la fecha de la próxima atención ")} else if(indications == "2"){
-                document.write(" ")
-            };
-} 
 
 function tecnicas(){
         let = tecnics = ""
