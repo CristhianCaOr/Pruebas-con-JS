@@ -542,30 +542,49 @@ function cierrevirtual(){
 }
 
 function ejercicios(){
-        let = practicas = ""
-        let = cual = ""
-        
-        practicas = prompt("¿Le han dejado ejercicicos al usuario? \n 1: si \n 2: no")
-    if(practicas == "1"){
+let practicas = null
+let cual = null
+practicas = prompt("¿Le han dejado ejercicicos al usuario? \n 1: si \n 2: no")
+
+switch(practicas){
+    case "1":
         cual = prompt("¿Cuales? \n 1: movilidad articular \n 2: ejercicios en miembros superiores \n 3: ejercicios en miembros inferiores \n 4:movilidad articular en miembros superiores \n 5:movilidad articular en miembros inferiores \n 6: movilidad articular en miembros superiores e inferiores")
-    } if (cual == "1"){
-        document.write("se dejan ejercicios de movilidad articular")
-    } else if(cual == "2"){
-        document.write("se dejan ejercicios para miembros superiores")
-    } else if(cual == "3"){
-        ducument.write("se dejan ejercicios para miembros inferiores")
-    } else if(cual == "4"){
-        document.write("se dejan ejercicios para movilidad articular en miembros superiores")
-    } else if(cual == "5"){
-        document.write("se dejan ejercicios para movilidad articular en miembros inferiores")
-    } else if(cual == "6"){
-        document.write("se dejan ejercicios para movilidad articular en miembros superiores e inferiores")
-    } else if(practicas == "2"){
-        document.write(" ")}
-};
-    
-    
-    
+
+        switch(cual){
+            case "1":
+                document.write("se dejan ejercicios de movilidad articular")
+            break;
+
+            case "2":
+                document.write("se dejan ejercicios para miembros superiores")
+            break;
+
+            case "3":
+                ducument.write("se dejan ejercicios para miembros inferiores")
+            break;
+
+            case "4":
+                document.write("se dejan ejercicios para movilidad articular en miembros superiores")
+            break;
+
+            case "5":
+                document.write("se dejan ejercicios para movilidad articular en miembros inferiores")
+            break;
+
+            case "6":
+                document.write("se dejan ejercicios para movilidad articular en miembros superiores e inferiores")
+            break;
+        }
+
+        case "2":
+            document.write(" ")
+        break;
+
+    }
+}
+
+
+// Codigo a ejecitar
     atenciontelefonica()
     estadousuario()
     agregar()
@@ -578,7 +597,7 @@ function ejercicios(){
     fecha()
     cierrevirtual()
     
-    }// fin atencion virtual
+}
 
 
 
