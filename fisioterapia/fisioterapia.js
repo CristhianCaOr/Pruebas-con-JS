@@ -22,16 +22,21 @@ function agregar(){
 
 
     function condicionesusuario(){
-        let = estado = ""
-        let = why = ""
+        let  estado = null
+        let  why = null
         estado = prompt("¿como estaba el usuario? \n 1: bien \n 2: mal / regular") 
-        if (estado == "1"){
-            document.write(" se encuentra en estables condiciones de salud general ")
-        } 
-        else if(estado == "2"){
-            why = prompt("¿Por que?")
-            document.write(why)
-    }
+        
+        switch(estado){
+            case "1":
+                document.write(" se encuentra en estables condiciones de salud general ")
+            break;
+
+            case "2":
+                why = prompt("¿Por que?")
+                document.write(why)
+            break;
+        }
+
 
 // Fin funciones visita presencial
 
