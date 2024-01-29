@@ -16,18 +16,19 @@ function agregar(){
         document.write(pork)
 }
 
-    function presencialmente(){
+function presencialmente(){
         document.write("<br>Se realiza visita desde el área con el objetivo de hacer seguimiento y la atención, se llega a la vivienda de la usuaria donde, ")
-    } 
+} 
 
 
-    function condicionesusuario(){
-        let  estado = null
-        let  why = null
-        estado = prompt("¿como estaba el usuario? \n 1: bien \n 2: mal / regular") 
-        
-        switch(estado){
-            case "1":
+function condicionesusuario(){
+    let  estado = null
+    let  why = null
+    estado = prompt("¿como estaba el usuario? \n 1: bien \n 2: mal / regular") 
+    
+    switch(estado){
+            
+        case "1":
                 document.write(" se encuentra en estables condiciones de salud general ")
             break;
 
@@ -37,13 +38,15 @@ function agregar(){
             break;
         }
 
-
 // Fin funciones visita presencial
 
 
     // inicio condiciones movilidad articular
-    }
-    function movilidadarticular(){
+}
+    
+    
+    
+function movilidadarticular(){
         let = miembros = ""
         let = what = ""
         function agregar(){
@@ -70,8 +73,10 @@ function agregar(){
             }
             agregar()
         
-        }// fin condicional de movilidad articular 
-    function felxo(){
+}// fin condicional de movilidad articular 
+    
+    
+function felxo(){
     let = extencion = ""
     extencion = prompt("extencion de que \n 1: rodillas \n 2: caderas \n 3: rodillas y caderas \n 4: codo \n 5: hombro \n 6: codo y hombro  ")
     if(extencion == "1"){
@@ -88,8 +93,11 @@ function agregar(){
         document.write("se enfoca la atención en desplazamientos en flexo extensión de codo y hombros, ")
     }
     
-    }// fin fn(flexo) 
-    function enfoquevisita1(){
+}// fin fn(flexo) 
+    
+    
+
+function enfoquevisita1(){
         let = razon = ""
         let = miembros = ""
         let = what = ""
@@ -138,8 +146,11 @@ function agregar(){
             document.write("se enfoca la atención y la asesoría para manejo de dolor")
         }
     
-        } // código motivo de la visita 1
-    function enfoquevisita2(){
+
+} // código motivo de la visita 1
+
+
+function enfoquevisita2(){
         let = razon = ""
         let = miembros = ""
         let = what = ""
@@ -188,8 +199,11 @@ function agregar(){
             document.write(" tanmbien en la asesoría para manejo de dolor")
         }
     
-        } // código motivo de la visita 2
-    function enfoquevisita3(){
+
+} // código motivo de la visita 2
+
+
+function enfoquevisita3(){
         let = razon = ""
         let = miembros = ""
         let = what = ""
@@ -238,24 +252,30 @@ function agregar(){
             document.write("y la asesoría para manejo de dolor")
         }
     
-        } // código motivo de la visita 3
-    function referencias(){
+
+} // código motivo de la visita 3
+
+
+function referencias(){
         let = references = ""
         references = prompt("¿Dejaste indicaciones? \n 1: si  \n 2: no ")
         if(references == "1"){
             document.write(" se dejan las indicaciones y se recuerdan los compromisos y dinámicas del programa, se deja el usuario en estables condiciones y se informa la fecha de la próxima atención ")} else if(references == "2"){
                 document.write(" ")
             };
-    }
-    function fecha(){
+}
+    
+function fecha(){
         let = cita = ""
         cita = prompt("Escribe la fecha de la proxima visita")
         document.write(cita + " ")
-    }
-    function cierrepresencial(){
+}
+    
+function cierrepresencial(){
         document.write("se deja a usuario en estables condiciones de salud general.")
-    }
-    // Fin funciones visita presencial
+}
+    
+// Fin funciones visita presencial
     
     
     // inicio codigo de la visita presencial
