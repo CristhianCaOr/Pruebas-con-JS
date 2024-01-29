@@ -50,7 +50,7 @@ function movilidadarticular(){
     function agregar(){
         let  pork = null
         pork = prompt("¿Deseas agregar algo mas? sino, dale aceptar")
-        document.write(pork)
+            document.write(pork)
     }
 
 let miembros = null   
@@ -91,7 +91,7 @@ agregar()
         
 
 }
-// fin condicional de movilidad articular 
+
     
 
 
