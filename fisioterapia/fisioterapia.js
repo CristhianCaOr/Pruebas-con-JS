@@ -348,12 +348,18 @@ function enfoquevisita3(){
 
 
 function referencias(){
-        let = references = ""
-        references = prompt("¿Dejaste indicaciones? \n 1: si  \n 2: no ")
-        if(references == "1"){
-            document.write(" se dejan las indicaciones y se recuerdan los compromisos y dinámicas del programa, se deja el usuario en estables condiciones y se informa la fecha de la próxima atención ")} else if(references == "2"){
-                document.write(" ")
-            };
+let  references = null
+references = prompt("¿Dejaste indicaciones? \n 1: si  \n 2: no ")
+
+switch(references){
+    case "1":
+        document.write(" se dejan las indicaciones y se recuerdan los compromisos y dinámicas del programa, se deja el usuario en estables condiciones y se informa la fecha de la próxima atención ")
+    break;
+
+    case "2":
+        document.write(" ")
+    break;
+    }       
 }
     
 function fecha(){
@@ -383,7 +389,7 @@ function cierrepresencial(){
     
 
 
-} // Fin codigo visita presencial
+}
 
 
 
