@@ -406,8 +406,6 @@ eleccion = prompt("¿Qué tipo de atencion fue? \n 1: para virtual")
 } 
 
 
-
-
 function estadousuario(){
 let estado =null
 let razon = null   
@@ -444,24 +442,39 @@ switch(estado){
 
 
 
-
-
 function enfoquellamada(){
-        let = razon0 = ""
-        
-        razon0 = prompt("motivo de la atencion: \n 0: ninguna\n 1: indicaciones de las dinamicas del proyecto \n 2: continuacion de atenciones \n 3: condiciones de salud del usuario \n 4: Revision de ejercicios dejados con anterioridad")
-        if(razon0 == "1"){
-            document.write("la atención se enfoca en las indicaciones frente a las dinámicas del proyecto, la continuidad de las atenciones y la importancia de cumplir con los compromisos")
-        } else if(razon0 == "2"){
-            document.write("la atención se enfoca en la indicación de la continuidad de las atenciones")
-        } else if(razon0 == "3"){
-            document.write("se enfoca la atención en la revisión de las condiciones de salud de la usuaria y en el cuidado")
-        } else if(razon0 == "4"){
-            document.write("se enfoca la atención en revisión de ejercicios dejados con anterioridad, se le recuerda la importancia de ejecutarlas con frecuencia y la importancia de las mismas para evitar lesiones y dolores articulares")
-        } else if (razon0 == "0"){
-            document.write(" ")
-        }
-}
+let razon = null
+razon = prompt("motivo de la atencion: \n 0: ninguna\n 1: indicaciones de las dinamicas del proyecto \n 2: continuacion de atenciones \n 3: condiciones de salud del usuario \n 4: Revision de ejercicios dejados con anterioridad")
+
+switch(razon){
+    case"0":
+        ocument.write(" ")
+    break;
+
+    case"1":
+        document.write("la atención se enfoca en las indicaciones frente a las dinámicas del proyecto, la continuidad de las atenciones y la importancia de cumplir con los compromisos")
+    break;
+
+    case"2":
+        document.write("la atención se enfoca en la indicación de la continuidad de las atenciones") 
+    break;
+
+    case"3":
+        document.write("se enfoca la atención en la revisión de las condiciones de salud de la usuaria y en el cuidado")
+    break;
+
+    case"4":
+        document.write("se enfoca la atención en revisión de ejercicios dejados con anterioridad, se le recuerda la importancia de ejecutarlas con frecuencia y la importancia de las mismas para evitar lesiones y dolores articulares")
+    break;
+    }
+}     
+
+
+
+
+
+
+
 
 function indicaciones(){
         let = indications = ""
