@@ -47,35 +47,57 @@ function condicionesusuario(){
     
     
 function movilidadarticular(){
-        let = miembros = ""
-        let = what = ""
-        function agregar(){
-        let = pork = ""
+    function agregar(){
+        let  pork = null
         pork = prompt("¿Deseas agregar algo mas? sino, dale aceptar")
         document.write(pork)
     }
+
+let miembros = null   
+let what = null
+miembros = prompt("en que miembros \n 1:Miembros superiores \n 2: Miembros inferiores \n 3: Miembro superiores e inferiores ")
+ 
+switch(miembros){
+    case "1":
+        document.write("se enfoca la atención en técnicas de movilidad articular en miembros superiores, ")
+    break;
+
+    case "2":
+        document.write("se enfoca la atención en técnicas de movilidad articular en miembros inferiores, ")
+    break;
+
+    case "3":
+        document.write("se enfoca la atención en técnicas de movilidad articular en miembros superiores e inferiores, ")
+    break;
+}
+
+what = prompt("que se hizo o que se utilizo \n 1: elevacion de miembros superiores \n 2: botellas caseras \n 3: peso corporal")
+
+switch(what){
+    case "1":
+        document.write("se realizan elevaciones de miembros inferiores para mejorar retorno censo y edema, ")
+    break;
+
+    case "2":
+        document.write("con la utilización de botellas caseras, ")
+    break;
+
+    case "3":
+        document.write("con la utilización de su propio peso corporal, ")
+    break;
+}
+           
+agregar()
         
-            miembros = prompt("en que miembros \n 1:Miembros superiores \n 2: Miembros inferiores \n 3: Miembro superiores e inferiores ")
-            if(miembros == "1"){
-                document.write("se enfoca la atención en técnicas de movilidad articular en miembros superiores, ")
-            } else if(miembros == "2"){
-                document.write("se enfoca la atención en técnicas de movilidad articular en miembros inferiores, ")
-            } else if(miembros == "3"){
-                document.write("se enfoca la atención en técnicas de movilidad articular en miembros superiores e inferiores, ")
-    }  
-            what = prompt("que se hizo o que se utilizo \n 1: elevacion de miembros superiores \n 2: botellas caseras \n 3: peso corporal")
-            if(what = "1"){
-                document.write("elevación de miembros inferiores para mejorar retorno censo y edema, ")
-            } else if(what == "2"){
-                document.write("con la utilización de botellas caseras, ")
-            } else if(what == "3"){
-                document.write("con la utilización de su propio peso corporal, ")
-            }
-            agregar()
-        
-}// fin condicional de movilidad articular 
+
+}
+// fin condicional de movilidad articular 
     
-    
+
+
+
+
+
 function felxo(){
     let = extencion = ""
     extencion = prompt("extencion de que \n 1: rodillas \n 2: caderas \n 3: rodillas y caderas \n 4: codo \n 5: hombro \n 6: codo y hombro  ")
@@ -290,7 +312,9 @@ function cierrepresencial(){
     fecha()
     cierrepresencial()
     
-    } // Fin codigo visita presencial
+
+
+} // Fin codigo visita presencial
 
 
 
