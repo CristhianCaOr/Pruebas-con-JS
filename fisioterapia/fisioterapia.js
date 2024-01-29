@@ -531,14 +531,8 @@ switch(tecnics){
 
 
 
-
-
-
-
-
-
 function fecha(){
-        let = cita = ""
+        let  cita = null
         cita = prompt("Escribe la fecha de la proxima visita, ")
         document.write(cita)
 }
