@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>terapia ocupacional</title>
+<script>
+
+function efectivo(){
+        let = eleccion = ""
+        let = why = ""
+        eleccion = prompt("¿Se hizo efectiva la visita? \n 1: si \n 2: no \n 3: la cancelaron")
+        if (eleccion == "1"){
+          inicio()
+            
+        } else if(eleccion == "2"){
+        document.write("<br><br>visita NO efectiva, al llegar a la vivienda, no se atiende a la puerta, se llaman a los numeros de contacto de la usuaria y no se obtiene respuesta.")
+    } else if(eleccion == "3"){
+        why = prompt("Quien canceló la visita \n 1: cuidadorA \n 2: CuidadOR")
+        if(why == "1"){
+        document.write("<br><br> Visita cancelada por la cuidadora debido a que no se encontraba disponible para atender la visita. ")    
+        } else if(why == "2"){
+            document.write("<br><br> Visita cancelada por el cuidador debido a que no se encontraba disponible para atender la visita. ")
+        }}    
+}        
+function identificacion(){
+    let = documento = ""
+    documento = prompt("Pon el tipo de documento y el numero de identificacion")
+    document.write(documento)
+}
+function inicio(){
+    let = cuestion = ""
+    cuestion = prompt("¿Que es? \n 1: evolución \n 2: evaluación")
+    
+    if(cuestion == "1"){
+    inicionormal()
+    cuidador()
+    estado()
+    motivodelavisita1()
+    motivodelavisita2()
+    motivodelavisita2()
+    indicaciones()
+    agregar()
+    cuadernoplaneador()
+    cierre()
+    final()
+} else if(cuestion == "2"){
+inicioevaluacion()
+estadousuarioe()
+cuidadorevaluacion()
+formatoev()
+add()
+vidadiaria()
+cognitivo()
+add()
+finas()
+add()
+gruesas()
+add()
+accesorios()
+end()
+}
+
+}// fin funcion "inicio" 
+
+
+// Inicio funciones de "evolucion" 
+function inicionormal(){
+        document.write("<br><br>Se realiza seguimiento del área, ")
+    } 
+function cuidador() {
+        let parentesco = "";
+        parentesco = prompt("Cual es el parentesco del cuidador")
+        if (parentesco == "padre" || parentesco == "hermano" || parentesco == "abuelo" || parentesco == "primo" || parentesco == "vecino") {
+            document.write(" atiende la visita su " + parentesco + " cuidador, ")
+        } else if (parentesco == "madre" || parentesco == "abuela" || parentesco == "hermana" || parentesco == "prima" || parentesco == "vecina") {
+            document.write(" atiende la visita su " + parentesco + " cuidadora, ")
+        } else if(parentesco == "usuaria" || parentesco == "cuidadora"){
+            document.write("atiende la " + parentesco +", ")
+        } else if(parentesco == "usuario" || parentesco == "cuidador"){
+            document.write("atiende el " + parentesco +", ")
+        }
+}
+function estado(){
+    let = encuentra = ""
+    let = mal = ""
+    encuentra = prompt("Como se encuentra el usuario \n 1: Bien \n 2: Mal")
+    if(encuentra == "1"){
+        document.write(" quien refiere que la usuaria se encuentra en buenas condiciones generales, ")
+} else if(encuentra == "2"){
+    mal = prompt("¿Por qué?")
+    document.write(mal)
+}
+}
+function motivodelavisita1(){
+function masajes(){
+        let = movilizaciones = ""
+
+        movilizaciones = prompt("en donde fueron las movilizaciones \n 1: Miembros superiores \n 2: miembros superiores derechos \n 3: miembros superiores izquierdos \n 4: miembros inferiores \n 5: miembros inferiores derechos \n 6: miembros inferiores izquierdos \n 7: dedos de la mano \n 8: facilicitacion dorso")
+        if(movilizaciones == "1"){
+            document.write(" se realizan movilizaciones en miembros superiores de manera atendida, ")
+        } else if(movilizaciones == "2"){
+        document.write(" se trabajan movilizaciones en miembros superiores especialmente en miembro superior derecho favoreciendo favoreciendo alcances y coordinación, ")
+        } else if(movilizaciones == "3"){
+            document.write(" se trabajan movilizaciones en miembros superiores especialmente en miembro superior izquierdo favoreciendo favoreciendo alcances y coordinación, ")
+        } else if(movilizaciones == "4"){
+            document.write(" se realizan movilizaciones en miembros inferiores, ")
+        }else if(movilizaciones == "5"){
+            document.write(" se trabajan movilizaciones en miembros inferiores especialmente en miembro superior derecho favoreciendo favoreciendo alcances y coordinación, ")
+        } else if(movilizaciones == "6"){
+            document.write(" se trabajan movilizaciones en miembros superiores especialmente en miembro inferior izquierdo favoreciendo alcances y coordinación, ")
+        } else if(movilizaciones == "7"){
+            document.write(" se realizan movilizaciones en dedos de la mano, ")
+        } else if(movilizaciones == "8"){
+            document.write(" se realizan técnicas de facilitación en dorso de manos, favoreciendo extensión de dedos, sugiero movimientos circulares en muñeca")
+        }
+     } // finaliza la funcion "masajes"   
+        
+    
+        
+        
+
+let = visita = ""
+
+visita = prompt("¿Cuál fue el motivo de la visita? \n 1: Orientacion acerca de la discapacidad \n 2: movilizaciones \n 3: recuerdo compromisos \n 4: estimulación tactil \n 5: actividades de rasgado \n 6: actividades anteriormente dejadas \n 7: movimientos circulares en muñeca \n 8: actividades cognitivo motrices \n 9: actividades grafomotoras \n 10: cambios de posición \n 11: explicar control cefalico \n 12: agarres a mano llena \n 13: plastilina terapeutica \n 14: habilidades motoras finas \n 15: Coordinacion visiomotriz \n 16: patrones mano - boca \n 17: actividades de estimulacion memorial \n 18: habitos y rutinas de higuiene y aliementación \n 19: agarres en diferentes planos \n 20: control postural \n 21: posiciones sedente y prono \n 22: caminata" )
+
+        if(visita == "1"){ 
+    document.write(" en la intervención se orientó acerca de la discapacidad de la usuaria a quien lo acompaña, debido a que tiene poco conocimiento, ")
+    }   else if(visita == "2"){
+        masajes()
+    }   else if(visita == "3"){
+            document.write(" se recuerdan los compromisos para seguir trabajando con responsabilidad, se recuerdan recomendaciones anteriormente dejadas, ")
+    }   else if(visita == "4"){
+            document.write(" se le orienta en estimulación táctil con texturas que contenga en la vivienda favoreciendo estimulación sensorial, ")
+    }   else if(visita == "5"){
+            document.write(" se trabajan actividades de rasgado, favoreciendo actividad motora fina y coordinación manual ")
+    }   else if(visita == "6"){
+            document.write("se recuerdan recomendaciones anteriormente dejadas y la importancia de seguir realizándolas")
+    }   else if(visita == "7"){
+            document.write("se realizan movimientos circulares en muñeca, ")
+    }   else if(visita == "8"){
+            document.write("se orientan actividades cognitivo motriz por medio de recortado, rasgado y coloreado, ")
+    }   else if(visita == "9"){
+            document.write("actividades grafomotoras trabajando escritura y reconocimiento del nombre, ")
+    }   else if(visita == "10"){
+            document.write("explico la importancia de los cambios de posicion")
+    }   else if(visita == "11"){
+            document.write("le explicó al cuidador ejercicios para favorecer control cefálico, ")
+    }   else if(visita == "12"){
+            document.write("se orienta en estimulación en agarres a mano llena, ")
+    }   else if(visita == "13"){
+            document.write("se trabajan actividades con plastilina terapéutica, favoreciendo dominación de dedos, ")
+    }   else if(visita == "14"){
+            document.write("se orientan las actividades que favorecen las habilidades motoras finas, ")
+    }   else if(visita == "15"){
+            document.write("se orienta la atencion en actividades que favorezcan coordinación visiomotriz ")
+    }   else if(visita == "16"){
+        document.write("se orienta la atencion en actividades que favorezcan la coordinacion en patron mano - boca, ")
+    }   else if(visita == "17"){
+        document.write(" se orienta la atencion en actividades de estimulación memorial de manera auditiva, visual y táctil con materiales que contengan en la vivienda, ")
+    }   else if(visita == "18"){
+        document.write(" la atencion se orienta en la importancia de los hábitos y rutinas de higiene y alimenticios del usuario, ")
+    }   else if(visita == "19"){
+        document.write("se orienta la atencion en agarres en diferentes planos, ")
+    }   else if(visita == "20"){
+        document.write("se trabaja en el fortalecimiento en control postural, ")
+    }   else if(visita == "21"){
+        document.write("se trabaja en el fortalecimiento de tronco en posición sedente y prono , ")
+    }   else if(visita == "22"){
+        document.write("se realiza caminata dentro y fuera del hogar favoreciendo marcha, ")
+    }
+
+}// fin funcion "motivo de la visita"
+function motivodelavisita2(){
+
+function masajes(){
+        let = movilizaciones = ""
+
+        movilizaciones = prompt("en donde fueron las movilizaciones \n 1: Miembros superiores \n 2: miembros superiores derechos \n 3: miembros superiores izquierdos \n 4: miembros inferiores \n 5: miembros inferiores derechos \n 6: miembros inferiores izquierdos \n 7: dedos de la mano \n 8: facilicitacion dorso")
+        if(movilizaciones == "1"){
+            document.write(" se realizan movilizaciones en miembros superiores de manera atendida, ")
+        } else if(movilizaciones == "2"){
+        document.write(" se trabajan movilizaciones en miembros superiores especialmente en miembro superior derecho favoreciendo favoreciendo alcances y coordinación, ")
+        } else if(movilizaciones == "3"){
+            document.write(" se trabajan movilizaciones en miembros superiores especialmente en miembro superior izquierdo favoreciendo favoreciendo alcances y coordinación, ")
+        } else if(movilizaciones == "4"){
+            document.write(" se realizan movilizaciones en miembros inferiores, ")
+        } else if(movilizaciones == "5"){
+            document.write(" se trabajan movilizaciones en miembros inferiores especialmente en miembro superior derecho favoreciendo favoreciendo alcances y coordinación, ")
+        } else if(movilizaciones == "6"){
+            document.write(" se trabajan movilizaciones en miembros superiores especialmente en miembro inferior izquierdo favoreciendo alcances y coordinación, ")
+        } else if(movilizaciones == "7"){
+            document.write(" se realizan movilizaciones en dedos de la mano, ")
+        } else if(movilizaciones == "8"){
+            document.write(" se realizan técnicas de facilitación en dorso de manos, favoreciendo extensión de dedos, sugiero movimientos circulares en muñeca")
+        }
+     } // finaliza la funcion "masajes"
+ 
+let = visita = ""
+
+visita = prompt("¿Cuál fue el motivo de la visita? \n 1: Orientacion acerca de la discapacidad \n 2: movilizaciones \n 3: recuerdo compromisos \n 4: estimulación tactil \n 5: actividades de rasgado \n 6: actividades anteriormente dejadas \n 7: movimientos circulares en muñeca \n 8: actividades cognitivo motrices \n 9: actividades grafomotoras \n 10: cambios de posición \n 11: explicar control cefalico \n 12: agarres a mano llena \n 13: plastilina terapeutica \n 14: habilidades motoras finas \n 15: coordinacion visiomotriz \n 16: patron mano - boca \n 17: actividades de estimulacion memorial \ 18: habitos y rutinas de higuiene y alimenticios \n 19: agarres en diferentes planos \n 20: control postural \n 21: posiciones sedente y prono \n 22: caminata" )
+
+    if(visita == "1"){ 
+    document.write(" tambien se orientó acerca de la discapacidad de la usuaria a quien lo acompaña, debido a que tiene poco conocimiento, ")
+    }   else if(visita == "2"){
+        masajes()
+    }   else if(visita == "3"){
+            document.write(" tambien se recuerdan los compromisos para seguir trabajando con responsabilidad, se recuerdan recomendaciones anteriormente dejadas, ")
+    }   else if(visita == "4"){
+            document.write(" tambien se le orienta en estimulación táctil con texturas que contenga en la vivienda favoreciendo estimulación sensorial, ")
+    }   else if(visita == "5"){
+            document.write(" tambien se trabajan actividades de rasgado, favoreciendo actividad motora fina y coordinación manual, ")
+    }   else if(visita == "6"){
+            document.write(" tambien se recuerdan recomendaciones anteriormente dejadas y la importancia de seguir realizándolas, ")
+    }   else if(visita == "7"){
+            document.write(" tambien se realizan movimientos circulares en muñeca, ")
+    }   else if(visita == "8"){
+            document.write("tambien se orientan actividades cognitivo motriz por medio de recortado, rasgado y coloreado, ")
+    }   else if(visita == "9"){
+            document.write("tambien se realizan actividades grafomotoras, trabajando escritura y reconocimiento del nombre, ")
+    }   else if(visita == "10"){
+            document.write(" tambien explico la importancia de los cambios de posicion")
+    }   else if(visita == "11"){
+            document.write("tambien le explicó al cuidador ejercicios para favorecer control cefálico, ")
+    }   else if(visita == "12"){
+            document.write("tambien oriento al cuidador en en estimulación en agarres a mano llena, ")
+    }   else if(visita == "13"){
+            document.write("tambien se trabajan actividades con plastilina terapéutica, favoreciendo dominación de dedos,")
+    }   else if(visita == "14"){
+            document.write("se orienta tambien en las actividades que favorecen las habilidades motoras finas, ")
+    }   else if(visita == "15"){
+            document.write("tambien en actividades que favorezcan la coordinación visiomotriz, ")
+    }   else if(visita == "16"){
+        document.write("tambien en actividades que favorezcan la coordinacion en patron mano - boca, ")
+    }   else if(visita == "17"){
+        document.write(" tambien se trabajan actividades de estimulación memorial de manera auditiva, visual y táctil con materiales que contengan en la vivienda ")
+    }   else if(visita == "18"){
+        document.write(" tambien en la importancia de los hábitos y rutinas de higiene y alimenticios del usuario, ")
+    }   else if(visita == "19"){
+        document.write("tambien en agarres en diferentes planos, ")
+    }   else if(visita == "20"){
+        document.write("tambien en el fortalecimiento en control postural y de tronco en posición, ")
+    }    else if(visita == "21"){
+        document.write("tambien en el fortalecimiento de tronco en posición sedente y prono, ")
+    }    else if(visita == "22"){
+        document.write("tambien se realiza caminata dentro y fuera del hogar favoreciendo marcha, ")
+    }
+    
+
+}// fin funcion "motivo de la visita"
+function indicaciones(){
+let = cuales = ""
+
+cuales = prompt("Cuales fueron las indicaciones que le dieron al usuario? \n 1: habitos y rutinas \n 2: patrones de movimiento \n 3: actividades de la vida diaria \n 4: procesos cognitivos \n 5: tiempo libre \n 6: tomar el sol" )
+if(cuales == "1"){
+    document.write("explico la importancia de involucrarse y de trabajar hábitos y rutinas ocupacionales, ")
+} else if(cuales == "2"){
+    document.write("en el día de hoy se trabaja en el indicador de patrones de movimiento, ")
+} else if(cuales == "3"){
+    document.write("en el día de hoy se trabaja en el indicador de actividades básicas de la vida diaria, ")
+} else if(cuales == "4"){
+    document.write("en el día de hoy se trabajan en el indicador de procesos cognitivos, ")
+} else if(cuales == "5"){
+    document.write("se trabajan en orientacion en las actividades de tiempo libre, ")
+} else if(cuales == "6"){
+    document.write("explicó la importancia de salir a tomar el sol, ")
+}
+}
+function cierre(){
+let = como = ""
+como = prompt("¿Cómo se cerro la atencion? \n 1: recordando compromisios del área \n 2: espacio de escucha \n 3: compromisos y espacio de escucha \n dando kit de higuiene oral")
+    if(como == "1"){
+        document.write("se recuerdan compromisos desde el área y ")
+    } else if(como == "2"){
+        document.write("se brinda un espacio de escucha, ")
+    } else if(como == "3"){
+        document.write("se recuerdan los compromisos desde el área de terapia ocupacional y se brinda un espacio de escucha, ")
+    } else if(como == "4"){
+        document.write("hago entrega de kit de higiene oral, ")
+    }
+}
+function final(){
+    document.write(" se le informa al usuario fecha de próxima atencion y se deja estable.")
+}
+function agregar(){
+    let = argumento = ""
+    argumento = prompt("¿Deseas agregar algo mas?, si no, pon una coma (,) ")
+    document.write(argumento)
+}
+function cuadernoplaneador(){
+let = dejar = ""
+dejar = prompt("Se dejaron recomendaciones en el cuaderno \n 1: si \n 2: no")
+    if(dejar == "1"){
+    document.write("se dejan recomendaciones en el cuaderno planeador, ")
+    } 
+}
+// Fin funciones de "evolucion" 
+
+// Inicio funciones de "EVAluacion"
+function inicioevaluacion(){
+        document.write("<br><br>Se realiza evaluacion a usuario ")
+    } 
+function estadousuarioe(){
+    let = encuentra = ""
+    let = mal = ""
+    encuentra = prompt("Como se encuentra el usuario \n 1: Bien \n 2: Mal")
+    if(encuentra == "1"){
+        document.write(" quien se encuentra en buenas condiciones generales, ")
+} else if(encuentra == "2"){
+    mal = prompt("¿Por qué?")
+    document.write(mal)
+}
+}
+function cuidadorevaluacion() {
+        let parentesco = ""
+        parentesco = prompt("Cual es el parentesco del cuidador")
+        if (parentesco == "padre" || parentesco == "hermano" || parentesco == "abuelo" || parentesco == "primo" || parentesco == "vecino") {
+            document.write("en compañía de su " + parentesco + " cuidador, ")
+        } else if (parentesco == "madre" || parentesco == "abuela" || parentesco == "hermana" || parentesco == "prima" || parentesco == "vecina") {
+            document.write( "en compañía de su " + parentesco + " cuidadora, ")
+        } else if(parentesco == "usuaria"){
+            document.write("atiende la visita " + parentesco +", ")
+        } else if(parentesco == "usuario"){
+            document.write("atiende la visita el " + parentesco +", ")
+        }
+}
+function formatoev(){
+        document.write("se diligencia formato de evaluación en el que se evidencia que, ")
+    }
+function vidadiaria(){
+        let = es = ""
+        es = prompt("como esta la usuaria en actividades de la vida diaria \n 1: dependiente \n 2: semidependiente \n 3: independiente")
+
+    if(es == "1"){
+        document.write("la usuaria es dependiente en las actividades de la vida diaria e instrumentales, ")
+    } else if(es == "2"){
+        document.write("la usuaria es semindependiente en las actividades de la vida diaria básica e instrumentales, ")
+    } else if(es == "3"){
+        document.write("la usuaria es independiente en las actividades de la vida diaria básica e instrumentales, ")
+    }
+    
+    
+    
+    }
+function cognitivo(){
+        let = level = ""
+        level = prompt("Como esta a nivel cognitivo \n 1: funcional \n 2: no funcional")
+            if(level == "1"){
+            document.write("es funcional a nivel cognitivo ")
+            } else if(level == "2"){
+                document.write("no funcional a nivel cognitivo ")
+            }
+
+        }
+function add(){
+    let = argumento = ""
+    argumento = prompt("¿Deseas agregar algo mas?, si no, dale enter")
+    document.write(argumento)
+}
+function finas(){
+    let = fino = ""
+    fino = prompt("como esta en las habilidades motoras fianas \n 1: funcional \n 2: no funcional")
+        if(fino == "1"){
+            document.write("funcional en habilidades motoras fina, ")
+        } else if(fino == "2"){
+            document.write("no es funcional en habilidades motoras finas, ")
+        }
+
+
+}
+function gruesas(){ 
+        let = grueso = ""
+        let = why = ""
+        grueso = prompt("como esta en habilidades motoras gruesas \n 1: funcional \n 2: no funcional")
+        if(grueso == "1"){
+            document.write("es funcional en habilidades motoras gruesas. ")
+        } else if(grueso == "2"){
+        why = prompt("¿por que? \n 1: No tiene control cefálico \n 2: No tiene control postural \n 3: No tiene control cefálico ni postural ") 
+        if(why == "1"){
+            document.write("no es funcional en habilidades motoras gruesas, no tiene control cefalico. ")
+        } if(why == "2"){
+            document.write("no es funcional en habilidades motoras gruesas, no tiene control postural. ") 
+        } if(why == "3"){
+            document.write("no es funcional en habilidades motoras gruesas, no tiene control cefálico ni postural. ")
+        }
+}
+}    
+function accesorios(){
+        let = que = ""
+        que = prompt("que accesorios tenía el usuario \n 1: no \n 2: silla de ruedas \n 3: medico en casa")
+        if(que == "1"){
+        document.write(" ")
+    } else if(que == "2"){
+        document.write("usuario tiene silla de ruedas neurológica. ")
+    } else if(que == "3"){
+        document.write("usuario tiene medico en casa. ")
+    }
+}
+function end(){
+    document.write(" Se informa objetivo de tratamiento, se le informa al usuario fecha de próxima atencion y se deja estable.")
+}
+
+// Fin funciones de EVAlucion
+
+
+
+identificacion()
+efectivo()
+
+
+
+</script>
+
+
+
+</head>
+<body>
+    
+</body>
+</html>
