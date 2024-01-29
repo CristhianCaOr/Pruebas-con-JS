@@ -386,7 +386,7 @@ function cierrepresencial(){
 
 
 function atencionvirtual(){  
-    // Inicio atencion virtual
+
     
 function agregar(){
         let  pork = null
@@ -525,10 +525,6 @@ switch(tecnics){
 
 }
 }
-
-
-
-
 
 
 function fecha(){
