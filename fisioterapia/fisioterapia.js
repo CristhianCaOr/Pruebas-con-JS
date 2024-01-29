@@ -408,29 +408,43 @@ eleccion = prompt("¿Qué tipo de atencion fue? \n 1: para virtual")
 
 
 
-
-
-
-
-
 function estadousuario(){
-        let = estado = ""
-        let = razon = ""    
-        
-        estado = prompt("¿como estaba el usuario? \n 1: Bien \n 2: mal") 
-        if (estado == "1"){
-            document.write(" quien indica que el usuario se ha encontrado en estables condiciones de salud general ")
-        } 
-        else if(estado == "2"){
-            razon = prompt("¿Por que? \n 1: problemas economicos \n 2: hospitalizacion \n 3: otro" )
-        if(razon == "1"){
+let estado =null
+let razon = null   
+estado = prompt("¿como estaba el usuario? \n 1: Bien \n 2: mal") 
+
+switch(estado){
+ 
+    case "1":
+        document.write(" quien indica que el usuario se ha encontrado en estables condiciones de salud general ")
+    break;
+
+    case "2":
+        razon = prompt("¿Por que? \n 1: problemas economicos \n 2: hospitalizacion \n 3: otro" )
+    
+    switch(razon){
+
+        case "1":
             document.write("quien refiere que se ha presentado dificultad para conseguir los alimentos y la situación económica es compleja")
-        } else if (razon == "2"){
-            document.write("quien refiere que el usuario esta hospitalizado ")}
-        } else if(razon == "3"){
+        break;
+
+        case "2":
+            document.write("quien refiere que el usuario esta hospitalizado ")
+        break;
+        
+        case "3":
             agregar()
-        }
+        break;
+
+    }
 }
+}
+
+           
+
+
+
+
 
 function enfoquellamada(){
         let = razon0 = ""
