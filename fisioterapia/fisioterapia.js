@@ -486,23 +486,56 @@ switch(indications){
 
 
 function tecnicas(){
-        let = tecnics = ""
-        let = tipodetecnica = ""
-        let = question = ""
-        tecnics = prompt("¿El usuario practico tecnicas? \n 1: si  \n 2: no ")
-        if(tecnics == "1"){
-            tipodetecnica = prompt("que tecnicas ha practicado el usuario \n 1: movilidad articular \n 2: tecnicas de cambios de posición \n 3: ambas \n 4: reducir espasticidad" )
-    if(tipodetecnica == "1"){
-        document.write(" indica que se han aplicado las tecnicas con enfoque en movilidad articular, ")
-    } else if(tipodetecnica == "2"){
-        document.write(" indica que se han aplicado las tecnicas con enfoque en cambios de posición, ")
-    } else if(tipodetecnica == "3"){
-        document.write(" indica que han aplicado tecnicas con enfoque en movilidad articular y cambios de posición, ")}
-        else if(tipodetecnica == "4"){
+
+let tecnics = null
+let tipodetecnica = null
+tecnics = prompt("¿El usuario practico tecnicas? \n 1: si  \n 2: no ")
+
+
+switch(tecnics){
+    case "1":
+        tipodetecnica = prompt("que tecnicas ha practicado el usuario \n 1: movilidad articular \n 2: tecnicas de cambios de posición \n 3: ambas \n 4: reducir espasticidad" )
+
+    switch(tipodetecnica){
+        
+        case "1":
+            document.write(" indica que se han aplicado las tecnicas con enfoque en movilidad articular, ")
+        break;
+
+        case "2":
+            document.write(" indica que se han aplicado las tecnicas con enfoque en cambios de posición, ")
+        break;
+
+        case "3":
+            document.write(" indica que han aplicado tecnicas con enfoque en movilidad articular y cambios de posición, ")
+        break;
+
+        case "4":
         document.write(" indica que han aplicado tecnicas para reducir espasticidad")
-    }} else if(tecnics == "2"){
+        break;
+    
+    }
+
+    break;
+
+
+    case "2":
         document.write(" ")
-}}
+    break;
+
+}
+}
+
+
+
+
+
+
+
+
+
+
+
 
 function fecha(){
         let = cita = ""
