@@ -192,12 +192,12 @@ switch(razon){
 } 
 
 
-function enfoquevisita2(){
+function enfoquevisita2(){  
 let razon = null
 razon = prompt("motivo de la atencion: \n 1: Revision de ejercicios dejados con anterioridad \n 2: movilidad articular \n 3: fortalecimiento de miembros \n 4: desplazamientos \n 5: felxo - extencion \n 6: abduccion y aduccion \n 7: rotaciones \n 8: técnicas de marcha \n 9: equilibrio \n 10: propiocepción \n 11: CORE \n 12: control cuello y cabeza \n 13: tecnicas de masaje \n 14: posicion de tendon \n 15: asesoria para manejo de dolor")
     
        
-switch(razon){
+    switch(razon){
 
     case "1":
         document.write(", tambien se enfoca la atención en revisión de ejercicios dejados con anterioridad, se le recuerda la importancia de ejecutarlas con frecuencia y la importancia de los mismos, ")
@@ -272,56 +272,79 @@ switch(razon){
 } 
 
 function enfoquevisita3(){
-        let = razon = ""
-        let = miembros = ""
-        let = what = ""
-        function agregar(){
-        let = pork = ""
-        pork = prompt("¿Deseas agregar algo mas? sino, dale aceptar")
-        document.write(pork)
-    }
+    let razon = null
+    razon = prompt("motivo de la atencion: \n 1: Revision de ejercicios dejados con anterioridad \n 2: movilidad articular \n 3: fortalecimiento de miembros \n 4: desplazamientos \n 5: felxo - extencion \n 6: abduccion y aduccion \n 7: rotaciones \n 8: técnicas de marcha \n 9: equilibrio \n 10: propiocepción \n 11: CORE \n 12: control cuello y cabeza \n 13: tecnicas de masaje \n 14: posicion de tendon \n 15: asesoria para manejo de dolor")
         
-        razon1 = prompt("motivo de la atencion: \n 1: Revision de ejercicios dejados con anterioridad \n 2: movilidad articular \n 3: fortalecimiento de miembros \n 4: desplazamientos \n 5: felxo - extencion \n 6: abduccion y aduccion \n 7: rotaciones \n 8: técnicas de marcha \n 9: equilibrio \n 10: propiocepción \n 11: CORE \n 12: control cuello y cabeza \n 13: tecnicas de masaje \n 14: posicion de tendon \n 15: asesoria para manejo de dolor")
+           
+        switch(razon){
     
-        if(razon1 == "1"){
+        case "1":
             document.write(" y en revisión de ejercicios dejados con anterioridad, se le recuerda la importancia de ejecutarlas con frecuencia y la importancia de los mismos, ")
-        } else if(razon1 == "2"){
+        break;
+    
+        case "2":
             movilidadarticular()
-        } else if(razon1 == "3"){
-        document.write("y en fortalecimiento de miembros superiores e inferiores, ")
-        } else if(razon1 == "4"){
+        break;
+    
+        case "3":
+            document.write("y en fortalecimiento de miembros superiores e inferiores, ")
+        break;
+    
+        case "4":
             document.write("y en desplazamientos en diferentes direcciones, ")
-        } else if(razon1 == "5"){
-            felxo()
-        } else if(razon1 == "6"){
+        break;
+    
+        case "5":
+            flexo()
+        break;
+    
+        case "6":
             document.write("y en abducción y aducción, ")
             agregar()
-        } else if(razon1 == "7"){
+        break;
+    
+        case "7":
             document.write("y en rotaciones, ")
             agregar()
-        } else if(razon1 == "8"){
+        break;
+    
+        case "8":
             document.write("y en técnicas de marcha, ")
             agregar()
-        } else if(razon1 == "9"){
+        break;
+    
+        case "9":
             document.write("y en técnicas de equilibrio, ")
-        agregar()
-        } else if(razon1 == "10"){
+            agregar()
+        break;
+    
+        case "10":
             document.write("y en la propiocepción, ")
             agregar()
-        } else if(razon1 == "11"){
-            document.write("y en la realización de ejercicios core para fortalecimiento de tronco miembros inferiores y mejorar patrón de marcha, ")
-        } else if(razon1 == "12"){
-            document.write("y en la realización de técnicas para control de cabeza y cuello mediante estimulación paravertebrales, movilidad de cabeza en diferentes direcciones sosteniendo 6 segundos para controlar cabeza, ")
-        } else if(razon1 == "13"){
-            document.write("y en técnicas de masaje")
-        } else if(razon1 == "14"){
-            document.write("y en la posición del tendon, para modulación del tono muscular")
-        } else if(razon1 == "15"){
-            document.write("y la asesoría para manejo de dolor")
-        }
+        break;
     
-
-} // código motivo de la visita 3
+        case "11":
+            document.write("y en la realización de ejercicios core para fortalecimiento de tronco miembros inferiores y mejorar patrón de marcha, ")
+        break;
+    
+        case "12":
+            document.write("y en la realización de técnicas para control de cabeza y cuello mediante estimulación paravertebrales, movilidad de cabeza en diferentes direcciones sosteniendo 6 segundos para controlar cabeza, ")
+        break;
+    
+        case "13":
+            document.write("y en técnicas de masaje")
+        break;
+    
+        case "14":
+            document.write("y en la posición del tendon, para modulación del tono muscular")
+        break;
+    
+        case "15":
+            document.write("y la asesoría para manejo de dolor")
+        break;
+    }
+    
+}
 
 
 function referencias(){
