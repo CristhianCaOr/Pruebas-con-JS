@@ -10,14 +10,17 @@ function visitapresencial(){
     // Inicio atencion presencial
     
     // funciones visita presencial
-    function agregar(){
-        let = pork = ""
-        pork = prompt("¿Deseas agregar algo mas? sino, dale aceptar")
+function agregar(){
+    let  pork = null
+    pork = prompt("¿Deseas agregar algo mas? sino, dale aceptar")
         document.write(pork)
-    }
+}
+
     function presencialmente(){
         document.write("<br>Se realiza visita desde el área con el objetivo de hacer seguimiento y la atención, se llega a la vivienda de la usuaria donde, ")
     } 
+
+
     function condicionesusuario(){
         let = estado = ""
         let = why = ""
@@ -29,6 +32,11 @@ function visitapresencial(){
             why = prompt("¿Por que?")
             document.write(why)
     }
+
+// Fin funciones visita presencial
+
+
+    // inicio condiciones movilidad articular
     }
     function movilidadarticular(){
         let = miembros = ""
