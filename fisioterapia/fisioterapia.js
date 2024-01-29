@@ -125,7 +125,6 @@ function felxo(){
     }
    
 }
-// fin fn(flexo) 
     
     
 
