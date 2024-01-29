@@ -92,30 +92,40 @@ agregar()
 
 }
 
-    
-
-
-
-
 
 function felxo(){
-    let = extencion = ""
+    let  extencion = null
     extencion = prompt("extencion de que \n 1: rodillas \n 2: caderas \n 3: rodillas y caderas \n 4: codo \n 5: hombro \n 6: codo y hombro  ")
-    if(extencion == "1"){
-        document.write("se enfoca la atención en desplazamientos en flexo extensión de rodillas, ")
-    } else if(extencion == "2"){
-        document.write("se enfoca la atención en desplazamientos en flexo extensión de caderas, ")
-    } else if(extencion == "3"){
-        document.write("se enfoca la atención en desplazamientos en flexo extensión de rodillas y caderas, ")
-    } else if(extencion == "4"){
-        document.write("se enfoca la atención en desplazamientos en flexo extensión de codos, ")
-    } else if(extencion == "5"){
-        document.write("se enfoca la atención en desplazamientos en flexo extensión de hombros, ")
-    } else if(extencion == "6"){
-        document.write("se enfoca la atención en desplazamientos en flexo extensión de codo y hombros, ")
-    }
     
-}// fin fn(flexo) 
+    
+    switch(extencion){
+        case "1":
+            document.write("se enfoca la atención en desplazamientos en flexo extensión de rodillas, ")
+        break;
+
+        case "2":
+            document.write("se enfoca la atención en desplazamientos en flexo extensión de caderas, ")
+        break;
+
+        case "3":
+            document.write("se enfoca la atención en desplazamientos en flexo extensión de rodillas y caderas, ")
+        break;
+
+        case "4":
+            document.write("se enfoca la atención en desplazamientos en flexo extensión de codos, ")
+        break;
+
+        case "5":
+            document.write("se enfoca la atención en desplazamientos en flexo extensión de hombros, ")
+        break;
+
+        case "6":
+            document.write("se enfoca la atención en desplazamientos en flexo extensión de codo y hombros, ")
+        break;
+    }
+   
+}
+// fin fn(flexo) 
     
     
 
