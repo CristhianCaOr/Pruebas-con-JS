@@ -372,10 +372,6 @@ function cierrepresencial(){
         document.write("se deja a usuario en estables condiciones de salud general.")
 }
     
-// Fin funciones visita presencial
-    
-    
-    // inicio codigo de la visita presencial
     
     presencialmente()
     condicionesusuario()
@@ -386,11 +382,26 @@ function cierrepresencial(){
     referencias()
     fecha()
     cierrepresencial()
-    
-
-
 }
 
+function tipodevisita(){
+    let  respuesta = null
+    respuesta = prompt("¿de que forma fue la visita? \n 1: presencial \n 2: virtual")
+    
+    switch(respuesta){
+        case "1":
+            visitapresencial()
+        break;
+
+        case "2":
+            atencionvirtual()
+        break;
+    }
+    
+}
+
+identificacion()
+tipodevisita()
 
 
 
@@ -409,8 +420,7 @@ function cierrepresencial(){
 
 
 
-
-function atencionvirtual(){  
+/*function atencionvirtual(){  
     // Inicio atencion virtual
     
     function agregar(){
@@ -533,23 +543,6 @@ function atencionvirtual(){
 
 
 
-function tipodevisita(){
-    let  respuesta = null
-    respuesta = prompt("¿de que forma fue la visita? \n 1: presencial \n 2: virtual")
-    
-    switch(respuesta){
-        case "1":
-            visitapresencial()
-        break;
-
-        case "2":
-            atencionvirtual()
-        break;
-    }
-    
-}
+*/
 
 
-
-identificacion()
-tipodevisita()
